@@ -21,9 +21,12 @@ import java.io.OutputStream;
 
 import org.apache.camel.Exchange;
 import org.apache.camel.Message;
+import org.apache.camel.RuntimeCamelException;
 import org.apache.camel.spi.DataFormat;
 import org.apache.tika.Tika;
 import org.apache.tika.metadata.Metadata;
+
+
 
 /**
  * Apache Tika Data format.
