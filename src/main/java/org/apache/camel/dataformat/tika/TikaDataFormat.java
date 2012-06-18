@@ -62,7 +62,7 @@ public class TikaDataFormat implements DataFormat {
                 if (metadata.isMultiValued(key)) {
                     String[] values = metadata.getValues(key);
                     for (int v = 0; v < values.length; v++) {
-                        String val = values[i];
+                        String val = values[v];
                         out.setHeader(outKey, val);
                     }
                 } else {
