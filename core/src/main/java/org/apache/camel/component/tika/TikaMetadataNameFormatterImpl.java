@@ -1,13 +1,12 @@
-package org.apache.camel.dataformat.tika;
+package org.apache.camel.component.tika;
 
 /**
  * Apache Tika Metadata name formatter.
  * Capitalizes a Metadata name and removes punctuation characters
- * 
+ *
  * @author Wouter Heijke
  */
-public class TikaMetadataNameFormatterImpl implements
-        TikaMetadataNameFormatter {
+public class TikaMetadataNameFormatterImpl implements TikaMetadataNameFormatter {
 
     private static String PREFIX = "Tika";
 
@@ -21,13 +20,14 @@ public class TikaMetadataNameFormatterImpl implements
                 sb.append(capitalize(s));
             }
         }
+
         return sb.toString();
     }
 
     private String capitalize(String s) {
         if (s.length() == 0)
             return s;
+
         return s.substring(0, 1).toUpperCase() + s.substring(1).toLowerCase();
     }
-
 }
