@@ -9,12 +9,13 @@
     </parent>
     <artifactId>camel-tika-parent</artifactId>
     <packaging>pom</packaging>
-    <name>${project.artifactId}</name>
+    <name>Camel :: Tika Parent</name>
 
     <properties>
-        <tika-version>1.8</tika-version>
+        <tika-version>1.11</tika-version>
         <tika-version-range>"[1.0,2.0)"</tika-version-range>
         <junit-version>4.12</junit-version>
+        <slf4j-api-verison>1.7.13</slf4j-api-verison>
     </properties>
 
     <modules>
@@ -43,6 +44,19 @@
                 <artifactId>camel-test</artifactId>
                 <version>${project.version}</version>
                 <scope>compile</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j-api-verison}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>${slf4j-api-verison}</version>
+                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
