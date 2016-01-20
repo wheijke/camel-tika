@@ -7,9 +7,11 @@
         <version>2.16.1</version>
         <relativePath/>
     </parent>
+    <!-- Changed the groupId as this isn't an Official Camel component -->
+    <groupId>org.garethahealy.camel-tika</groupId>
     <artifactId>camel-tika-parent</artifactId>
     <packaging>pom</packaging>
-    <name>Camel :: Tika Parent</name>
+    <name>GarethHealy :: Camel :: Tika Parent</name>
 
     <properties>
         <tika-version>1.11</tika-version>

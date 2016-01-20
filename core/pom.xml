@@ -2,14 +2,14 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.apache.camel</groupId>
+        <groupId>org.garethahealy.camel-tika</groupId>
         <artifactId>camel-tika-parent</artifactId>
         <version>2.16.1</version>
         <relativePath>../</relativePath>
     </parent>
     <artifactId>camel-tika</artifactId>
     <packaging>bundle</packaging>
-    <name>Camel :: Tika</name>
+    <name>GarethHealy :: Camel :: Tika</name>
     <description>Camel Apache Tika Support</description>
 
     <properties>

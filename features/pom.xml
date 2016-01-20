@@ -4,14 +4,14 @@
 
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.apache.camel</groupId>
+        <groupId>org.garethahealy.camel-tika</groupId>
         <artifactId>camel-tika-parent</artifactId>
         <version>2.16.1</version>
         <relativePath>../</relativePath>
     </parent>
     <artifactId>camel-tika-features</artifactId>
     <packaging>jar</packaging>
-    <name>Camel :: Tika :: Features</name>
+    <name>GarethHealy :: Camel :: Tika :: Features</name>
 
     <build>
         <defaultGoal>install</defaultGoal>
