@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.garethahealy.camel-tika</groupId>
+        <artifactId>camel-tika-parent</artifactId>
+        <version>2.16.1</version>
+        <relativePath>../</relativePath>
+    </parent>
+    <artifactId>camel-tika</artifactId>
+    <packaging>bundle</packaging>
+    <name>GarethHealy :: Camel :: Tika</name>
+    <description>Camel Apache Tika Support</description>
+
+    <properties>
+        <camel.osgi.import.before.defaults>org.apache.tika.*;version=${tika-version-range}</camel.osgi.import.before.defaults>
+        <camel.osgi.export.pkg>org.apache.camel.component.tika.*</camel.osgi.export.pkg>
+        <camel.osgi.export.service>org.apache.camel.spi.DataFormatResolver;dataformat=tika</camel.osgi.export.service>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.tika</groupId>
+            <artifactId>tika-parsers</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-test</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+        </dependency>
+    </dependencies>
+</project>
